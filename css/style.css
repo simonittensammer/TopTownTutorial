@@ -1,0 +1,379 @@
+/*
+  General
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Press Start 2P', cursive, "Roboto Medium";
+  color: white;
+  font-size: 130%;
+  line-height: 200%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.centerX {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.centerY {
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.centerXY {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*
+  Navigation
+*/
+#navBox {
+  position: fixed;
+  top: 0;
+  left: -18vw;
+  height: 100vh;
+  width: 18vw;
+  background-color: #313131;
+  z-index: 100;
+  overflow: hidden;
+  transition: all .2s ease-in-out;
+}
+
+#navUl {
+  margin-top: 15vh;
+}
+
+.navLi {
+  list-style: none;
+  line-height: 250%;
+}
+
+.navLi:hover {
+  background: white;
+}
+
+.navLink {
+  padding: 0 2vw;
+  display: block;
+}
+
+.navLink:hover {
+  color: #313131;
+}
+
+.navTitle {
+  width: 18vw;
+  position: absolute;
+  bottom: -2vh;
+}
+
+.nextLink{
+  position: absolute;
+  right: -6vw;
+  bottom: -2vw;
+  font-size: 1.5vw;
+  line-height: 1.5vw;
+  display: block;
+  padding: 1vw;
+}
+
+.fp-controlArrow{
+/*  display: none; */
+}
+
+/*
+  Menu-icon
+*/
+.buttonBox {
+  width: 6vh;
+  height: 5vh;
+  position: fixed;
+  top: 5vh;
+  left: 5vh;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.buttonBox:hover{
+}
+
+.bar {
+  height: 20%;
+  width: 100%;
+  background-color: white;
+  transition: all .2s ease-in-out;
+}
+
+.firstBar {
+  position: absolute;
+  top: 0;
+}
+
+.secondBar {}
+
+.lastBar {
+  position: absolute;
+  bottom: 0;
+}
+
+/*
+  Sections
+*/
+.wrapper {
+  height: 80vh;
+  width: 80vw;
+}
+
+.sectionHeadline {
+  font-size: 4vw;
+  line-height: 16vh;
+  padding-left: 2vw;
+}
+
+.topColumn {
+  width: 100%;
+  height: 20%;
+}
+
+.leftColumn {
+  width: 50%;
+  height: 80%;
+  float: left;
+}
+
+.rightColumn {
+  width: 50%;
+  height: 80%;
+  float: right;
+}
+
+/*
+  Startpage / Section0
+*/
+#section0 {
+  text-align: center;
+}
+
+#section0>* {
+  margin: 0;
+  padding: 0;
+}
+
+#startLinkBox {
+  z-index: 999;
+  margin-top: 15vh;
+}
+
+.startLink {
+  font-size: 2vw;
+  line-height: 2vw;
+}
+
+#startGameLink {
+  font-size: 3vw;
+  line-height: 200%;
+  background: #61ce66;
+  box-shadow: inset -.66vh -.66vh 0 0 #2b6b2e;
+}
+
+#startGameLink:hover {
+  box-shadow: inset -1vh -1vh 0 0 #2b6b2e;
+  background: #53ba58;
+}
+
+#startGameLink:active {
+  box-shadow: inset .66vh .66vh 0 0 #2b6b2e;
+}
+
+#startGameLink::before, #startGameLink::after {
+  content: '';
+  position: absolute;
+  width: 20%;
+  height: 10%;
+  box-sizing: content-box;
+}
+
+.section_8bit {
+  width: 32vw;
+  float: left;
+  border-left: 10px solid #313131;
+  border-right: 10px solid #313131;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.section_8bit #startGameLink {
+  display: block;
+  color: white;
+  padding: 0;
+  margin: -10px 0;
+  border-top: 10px solid #313131;
+  border-bottom: 10px solid #313131;
+}
+
+.section_8bit::before,
+.section_8bit::after,
+.section_8bit #startGameLink::before,
+.section_8bit #startGameLink::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  display: block;
+  position: absolute;
+  background: #313131;
+}
+
+.section_8bit::before {
+  top: -5px;
+  left: -5px;
+}
+
+.section_8bit::after {
+  top: -5px;
+  right: -5px;
+}
+
+.section_8bit #startGameLink::before {
+  bottom: -5px;
+  left: -5px;
+}
+
+.section_8bit #startGameLink::after {
+  bottom: -5px;
+  right: -5px;
+}
+
+.container {
+  height: 60%;
+}
+
+.title {
+  position: relative;
+  width: 80vw;
+  height: 60%;
+  transform: scale(.6) translate(-50%, -35%);
+}
+
+.title img {
+  width: 100%;
+  animation: titleAnimation 5s infinite ease-in-out;
+  position: absolute;
+  top: 10%;
+}
+
+.title img:nth-child(5) {
+  animation-delay: -4s;
+}
+
+.title img:nth-child(4) {
+  animation-delay: -3s;
+}
+
+.title img:nth-child(3) {
+  animation-delay: -2s;
+}
+
+.title img:nth-child(2) {
+  animation-delay: -1s;
+}
+
+.title img:nth-child(1) {
+  animation-delay: 0s;
+}
+
+@keyframes titleAnimation {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/*
+  Preview-Boxes
+*/
+.prevGifBox, .prevGif {
+  width: 36vw;
+  height: 20.25vw;
+  border-radius: 1vw;
+}
+
+.prevGifBox {
+  transform-style: preserve-3d;
+  box-shadow: 1vw 1vw 5vw #313131;
+  position: relative;
+  top: 15%;
+  left: 2vw;
+}
+
+.prevGif {}
+
+/*
+  Information-Boxes
+*/
+.infoBox {
+  margin: 0 2vw;
+}
+
+.infoHeadline {
+  font-size: 2vw;
+  margin-bottom: 2vw;
+}
+
+.infoText{
+  font-size: 1.5vw;
+  line-height: 2.5vw;
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+  background: white;
+}
+
+.fp-slidesNav * {
+  text-align: center;
+}
+
+/*
+  Responsive
+*/
+@media screen and (max-width: 768px) {
+  .leftColumn {
+    height: 20%;
+    width: 100vw;
+  }
+
+  .rightColumn {
+    height: 60%;
+    width: 100vw;
+    float: left;
+  }
+
+  .prevGifBox {
+    left: 20vw;
+  }
+
+  .infoBox{
+    margin-left: 20vw;
+  }
+}

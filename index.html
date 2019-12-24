@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/lib/fullpage.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P">
+  <link rel="stylesheet" href="css/style.css">
+  <title>TopTown Tutorial</title>
+  <link rel="icon" href="img/icon.png" type="image/png" sizes="16x16">
+</head>
+
+<body>
+  <div class="buttonBox" onclick="toggleNav();">
+    <div class="firstBar bar" id="firstBar"></div>
+    <div class="secondBar bar centerY" id="secondBar"></div>
+    <div class="lastBar bar" id="lastBar"></div>
+  </div>
+
+  <div id="navBox">
+    <ul id="navUl">
+      <li class="navLi"><a href="#start" class="navLink" onclick="toggleNav();">Start</a></li>
+      <li class="navLi"><a href="#about" class="navLink" onclick="toggleNav();">About</a></li>
+      <li class="navLi"><a href="#controls" class="navLink" onclick="toggleNav();">Controls</a></li>
+      <li class="navLi"><a href="#inventory" class="navLink" onclick="toggleNav();">Inventory</a></li>
+      <li class="navLi"><a href="#enemys" class="navLink" onclick="toggleNav();">Enemies</a></li>
+      <li class="navLi"><a href="#weapons" class="navLink" onclick="toggleNav();">Weapons</a></li>
+    </ul>
+    <a href="#start" onclick="toggleNav();"><img src="img/title.png" alt="lel" class="navTitle"></a>
+  </div>
+
+  <div id="fullpage" onclick="hideNav();">
+    <!--
+      SECTION 0
+      START
+    -->
+    <div class="section " id="section0">
+      <div class="wrapper centerX">
+        <div class="container">
+          <div class="title" id="title">
+            <img src="img/cloud1.png" alt="lel">
+            <img src="img/cloud4.png" alt="lel">
+            <img src="img/cloud3.png" alt="lel">
+            <img src="img/cloud2.png" alt="lel">
+            <img src="img/title.png" alt="lel">
+          </div>
+        </div>
+
+        <div id="startLinkBox">
+          <section class="section_8bit centerX">
+            <a href="http://www.top-town.tk" class="startLink" id="startGameLink">Play Game</a>
+          </section><br>
+          <a href="#about" class="nextLink" id="startTutorialLink">Tutorial <b>></b></a>
+        </div>
+      </div>
+    </div>
+
+    <!--
+      SECTION 1
+      ABOUT
+    -->
+    <div class="section" id="section1">
+      <div class="slide" id="slide-1-0">
+        <div class="wrapper centerX">
+          <div class="topColumn">
+            <h1 class="sectionHeadline">About the Game</h1>
+          </div>
+
+          <div class="leftColumn">
+            <div class="prevGifBox" data-tilt data-tilt-glare=false data-tilt-max="3" data-tilt-maxGlare=".2">
+              <img src="img/move.gif" alt="aim" class="prevGif">
+            </div>
+          </div>
+
+          <div class="rightColumn">
+            <div class="infoBox centerY">
+              <h2 class="infoHeadline">The GOAL</h2>
+              <p class="infoText">
+                Fight Zombies and try to survive as long as possible. <br>
+                But watch out, there are multiple types of enemies!
+              </p>
+            </div>
+          </div>
+          <a href="#about/1" class="nextLink">Next <b>></b></a>
+        </div>
+      </div>
+
+      <div class="slide" id="slide-1-1">
+        <div class="wrapper centerX">
+          <div class="topColumn">
+            <h1 class="sectionHeadline">About the Game</h1>
+          </div>
+
+          <div class="leftColumn">
+            <div class="prevGifBox" data-tilt data-tilt-glare=false data-tilt-max="3" data-tilt-maxGlare=".2">
+              <img src="img/move.gif" alt="aim" class="prevGif">
+            </div>
+          </div>
+
+          <div class="rightColumn">
+            <div class="infoBox centerY">
+              <h2 class="infoHeadline">The NEXUS</h2>
+              <p class="infoText">
+                Stay near the nexus and defend it!<br>It has saved all the needed energy.
+              </p>
+            </div>
+          </div>
+
+          <a href="#about/2" class="nextLink">Next <b>></b></a>
+        </div>
+      </div>
+
+      <div class="slide" id="slide-1-2">
+        <div class="wrapper centerX">
+          <div class="topColumn">
+            <h1 class="sectionHeadline">About the Game</h1>
+          </div>
+
+          <div class="leftColumn">
+            <div class="prevGifBox" data-tilt data-tilt-glare=false data-tilt-max="3" data-tilt-maxGlare=".2">
+              <img src="img/move.gif" alt="aim" class="prevGif">
+            </div>
+          </div>
+
+          <div class="rightColumn">
+            <div class="infoBox centerY">
+              <h2 class="infoHeadline">DEFEND yourself</h2>
+              <p class="infoText">
+                Use weapons to defend yourself. <br>
+                Choose the weapon, that fits you best!
+              </p>
+            </div>
+          </div>
+
+          <a href="#controls" class="nextLink">Next <b>></b></a>
+        </div>
+      </div>
+    </div>
+
+    <!--
+      SECTION 2
+      CONTROLS
+    -->
+    <div class="section" id="section2">
+      <div class="slide" id="slide-2-0">
+        <div class="wrapper centerX">
+          <div class="topColumn">
+            <h1 class="sectionHeadline">Controls</h1>
+          </div>
+
+          <div class="leftColumn">
+            <div class="prevGifBox" data-tilt data-tilt-glare=false data-tilt-max="3" data-tilt-maxGlare=".2">
+              <img src="img/move.gif" alt="aim" class="prevGif">
+            </div>
+          </div>
+
+          <div class="rightColumn">
+            <div class="infoBox centerY">
+              <h2 class="infoHeadline">How to MOVE</h2>
+              <p class="infoText">
+                Use<br>
+                W for going up,<br>
+                A for going left,<br>
+                S for going down and<br>
+                D for going right.
+              </p>
+            </div>
+          </div>
+
+          <a href="#controls/1" class="nextLink">Next <b>></b></a>
+        </div>
+      </div>
+
+      <div class="slide" id="slide-2-1">
+        <div class="wrapper centerX">
+          <div class="topColumn">
+            <h1 class="sectionHeadline">Controls</h1>
+          </div>
+
+          <div class="leftColumn">
+            <div class="prevGifBox" data-tilt data-tilt-glare=false data-tilt-max="3" data-tilt-maxGlare=".2">
+              <img src="img/aim.gif" alt="aim" class="prevGif">
+            </div>
+          </div>
+
+          <div class="rightColumn">
+            <div class="infoBox centerY">
+              <h2 class="infoHeadline">How to SHOOT</h2>
+              <p class="infoText">
+                Drag the cursor over the enemies to aim at them.<br><br>
+                Now press the left mouse key to shoot.
+              </p>
+            </div>
+          </div>
+
+          <a href="#controls/2" class="nextLink">Next <b>></b></a>
+        </div>
+
+      </div>
+
+      <div class="slide" id="slide-2-2">
+        <div class="wrapper centerX">
+          <div class="topColumn">
+            <h1 class="sectionHeadline">Controls</h1>
+          </div>
+
+          <div class="leftColumn">
+            <div class="prevGifBox" data-tilt data-tilt-glare=false data-tilt-max="3" data-tilt-maxGlare=".2">
+              <img src="img/aim.gif" alt="aim" class="prevGif">
+            </div>
+          </div>
+
+          <div class="rightColumn">
+            <div class="infoBox centerY">
+              <h2 class="infoHeadline">Other Controls</h2>
+              <p class="infoText">
+                Use<br>
+                space to dash,<br>
+                I to open inventory and<br>
+                N to start new wave
+              </p>
+            </div>
+          </div>
+
+          <a href="#inventory" class="nextLink">Next <b>></b></a>
+        </div>
+      </div>
+    </div>
+
+    <!--
+      SECTION 3
+      INVENTORY
+    -->
+    <div class="section" id="section3">
+      <div class="slide" id="slide-3-0">
+        <div class="wrapper centerX">
+          <div class="topColumn">
+            <h1 class="sectionHeadline">Inventory</h1>
+          </div>
+
+          <div class="leftColumn">
+            <div class="prevGifBox" data-tilt data-tilt-glare=false data-tilt-max="3" data-tilt-maxGlare=".2">
+              <img src="img/move.gif" alt="aim" class="prevGif">
+            </div>
+          </div>
+
+          <div class="rightColumn">
+            <div class="infoBox centerY">
+              <h2 class="infoHeadline">Open INVENTORY</h2>
+              <p class="infoText">
+                As mentioned before, use "i" on your Keyboard to open the inventory.
+              </p>
+            </div>
+          </div>
+
+          <a href="#inventory/1" class="nextLink">Next <b>></b></a>
+        </div>
+      </div>
+
+      <div class="slide" id="slide-3-1">
+        <div class="wrapper centerX">
+          <div class="topColumn">
+            <h1 class="sectionHeadline">Inventory</h1>
+          </div>
+
+          <div class="leftColumn">
+            <div class="prevGifBox" data-tilt data-tilt-glare=false data-tilt-max="3" data-tilt-maxGlare=".2">
+              <img src="img/move.gif" alt="aim" class="prevGif">
+            </div>
+          </div>
+
+          <div class="rightColumn">
+            <div class="infoBox centerY">
+              <h2 class="infoHeadline">Select ITEMS</h2>
+              <p class="infoText">
+                Choose an item on the left side of the inventory and click the "equip"-button to select it.
+              </p>
+            </div>
+          </div>
+
+          <a href="#inventory/2" class="nextLink">Next <b>></b></a>
+        </div>
+      </div>
+
+      <div class="slide" id="slide-3-2">
+        <div class="wrapper centerX">
+          <div class="topColumn">
+            <h1 class="sectionHeadline">Inventory</h1>
+          </div>
+
+          <div class="leftColumn">
+            <div class="prevGifBox" data-tilt data-tilt-glare=false data-tilt-max="3" data-tilt-maxGlare=".2">
+              <img src="img/move.gif" alt="aim" class="prevGif">
+            </div>
+          </div>
+
+          <div class="rightColumn">
+            <div class="infoBox centerY">
+              <h2 class="infoHeadline">Current ITEMS</h2>
+              <p class="infoText">
+                On the right side you can see which items are currently equipped. Click on them to deselect.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!--
+      SECTION 4
+      ENEMIES
+    -->
+    <div class="section" id="section4">
+      <div class="wrapper centerX">
+        <div class="topColumn">
+          <h1 class="sectionHeadline">Enemies</h1>
+        </div>
+
+        <div class="leftColumn">
+
+        </div>
+
+        <div class="rightColumn">
+
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="section5">
+      <div class="wrapper centerX">
+        <div class="topColumn">
+          <h1 class="sectionHeadline">Weapons</h1>
+        </div>
+
+        <div class="leftColumn">
+
+        </div>
+
+        <div class="rightColumn">
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/lib/jquery-3.2.1.min.js" charset="utf-8"></script>
+  <script src="js/lib/fullpage.min.js" charset="utf-8"></script>
+  <script type="text/javascript" src="js/lib/fullpage.min.js"></script>
+  <script src="js/lib/tilt.jquery.min.js" charset="utf-8"></script>
+  <script src="js/script.js" charset="utf-8"></script>
+</body>
+
+</html>
